@@ -1,7 +1,7 @@
 #!/bin/bash
 
 install_things(){
-	pacman -Syu i3 xorg xorg-init polybar rofi nitrogen rofi sddm dhcpcd dhcp grub efibootmgr dosfostools os-prober mtools networkmanager git terminator firefox wget vim sudo
+	pacman -Syu i3 xorg xorg-xinit polybar rofi nitrogen rofi sddm dhcpcd dhcp grub efibootmgr dosfstools os-prober mtools networkmanager git terminator firefox wget vim sudo
 	systemctl enable dhcpcd
 	systemctl enable NetworkManager
 }
