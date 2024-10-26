@@ -6,16 +6,16 @@ install_things(){
 	systemctl enable NetworkManager
 }
 install_themes(){
-	cd ~/
+	cd ~/.
 	mkdir Desktop Documents Downloads Pictures Downloads/git-downloads Pictures/Wallpapers Pictures/Screenshots
 	sudo pacman -Syu plasma lxappearance gtk-engines
-	cp themes/i3/config ~/.config/i3/
-	cp -r themes/polybar ~/.config/
-	cp -r themes/rofi ~/.config/
-	sudo cp -r themes/candy-icons /usr/share/icons/
-	sudo cp -r themes/Sweet-cursors /usr/share/icons/
-	sudo cp -r themes/Sweet-Dark-v40 /usr/share/themes/
-	sudo cp -r themes/sweet-plasma6 /usr/share/sddm/themes/
+	cp ~/easy-install/themes/i3/config ~/.config/i3/
+	cp -r ~/easy-install/themes/polybar ~/.config/
+	cp -r ~/easy-install/themes/rofi ~/.config/
+	sudo cp -r ~/easy-install/themes/candy-icons /usr/share/icons/
+	sudo cp -r ~/easy-install/themes/Sweet-cursors /usr/share/icons/
+	sudo cp -r ~/easy-install/themes/Sweet-Dark-v40 /usr/share/themes/
+	sudo cp -r ~/easy-install/themes/sweet-plasma6 /usr/share/sddm/themes/
 	git clone https://aur.archlinux.org/yay
 	cd yay 
 	makepkg -si
