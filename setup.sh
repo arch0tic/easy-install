@@ -6,6 +6,7 @@ install_things(){
 	systemctl enable NetworkManager
 }
 install_themes(){
+	cd ~/
 	mkdir Desktop Documents Downloads Pictures Downloads/git-downloads Pictures/Wallpapers Pictures/Screenshots
 	sudo pacman -Syu plasma lxappearance gtk-engines
 	cp themes/i3/config ~/.config/i3/
