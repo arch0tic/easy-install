@@ -8,7 +8,6 @@ install_things(){
 install_themes(){
 	cd ~/.
 	mkdir Desktop Documents Downloads Pictures Downloads/git-downloads Pictures/Wallpapers Pictures/Screenshots
-	sudo pacman -Syu plasma lxappearance gtk-engines
 	cp ~/easy-install/themes/i3/config ~/.config/i3/
 	cp -r ~/easy-install/themes/polybar ~/.config/
 	cp -r ~/easy-install/themes/rofi ~/.config/
