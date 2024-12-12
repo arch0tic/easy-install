@@ -10,11 +10,13 @@ install_themes(){
 	mkdir Desktop Documents Downloads Pictures Downloads/git-downloads Pictures/Wallpapers Pictures/Screenshots
 	cp ~/easy-install/themes/i3/config ~/.config/i3/
 	cp -r ~/easy-install/themes/polybar ~/.config/
-	cp -r ~/easy-install/themes/rofi ~/.config/
-	sudo cp -r ~/easy-install/themes/candy-icons /usr/share/icons/
-	sudo cp -r ~/easy-install/themes/Sweet-cursors /usr/share/icons/
-	sudo cp -r ~/easy-install/themes/Sweet-Dark-v40 /usr/share/themes/
-	sudo cp -r ~/easy-install/themes/sweet-plasma6 /usr/share/sddm/themes/
+	cp -r ~/easy-install/themes/rofi/rofi ~/.config/
+ 	mkdir ~/.local/share/fonts/
+  	cp -r ~/easy-install/themes/polybar/fonts ~/.local/share/fonts/
+	sudo cp -r ~/easy-install/themes/customisation/candy-icons /usr/share/icons/
+	sudo cp -r ~/easy-install/themes/customisation/Sweet-cursors /usr/share/icons/
+	sudo cp -r ~/easy-install/themes/customisation/Sweet-Dark-v40 /usr/share/themes/
+	sudo cp -r ~/easy-install/themes/customisation/sweet-plasma6 /usr/share/sddm/themes/
 	git clone https://aur.archlinux.org/yay
 	cd yay 
 	makepkg -si
@@ -34,8 +36,8 @@ main(){
                                                            
 
 	'''
-	echo -e "[ First option is for apps install in CHROOT ] "
-	echo -e "[ And the second option is for themeing only ] "
+	echo -e " Essential Arch Linux installation programs - [ 1 ]"
+	echo -e " Install theme - [ 2 ] "
 	read -p "Insert option: " option
 	if [[ $option == "1" ]] then
 		install_things
