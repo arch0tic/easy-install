@@ -8,9 +8,13 @@ install_things(){
 install_themes(){
 	cd ~/.
 	mkdir Desktop Documents Downloads Pictures Downloads/git-downloads Pictures/Wallpapers Pictures/Screenshots
+ 	mkdir ~/.config/
+  	mkdir ~/.config/i3
 	cp ~/easy-install/themes/i3/config ~/.config/i3/
 	cp -r ~/easy-install/themes/polybar ~/.config/
 	cp -r ~/easy-install/themes/rofi/rofi ~/.config/
+ 	mkdir ~/.local
+ 	mkdir ~/.local/share
  	mkdir ~/.local/share/fonts/
   	cp -r ~/easy-install/themes/polybar/fonts ~/.local/share/fonts/
 	sudo cp -r ~/easy-install/themes/customisation/candy-icons /usr/share/icons/
